@@ -22,7 +22,8 @@ class TextForm extends Component {
             padding: "9px",
             boxSizing: "border-box",
             fontSize: "inherit",
-            marginLeft: "10px"
+            marginLeft: "10px",
+            overflowY: "scroll"
         }
 
         return (
@@ -34,7 +35,7 @@ class TextForm extends Component {
                             name="content"
                             onChange={this.props.handleChange}
                             value={this.props.content}
-                            placeholder="You can enter as few as 100 words, but for a more accurate analysis, you need ore words. Watson requires a minimum of 600, preferably 1,200 or more, to compute statistically significant estimates."
+                            placeholder="You can enter as few as 100 words, but for a more accurate analysis, you need more words. Watson requires a minimum of 600, preferably 1,200 or more, to compute statistically significant estimates."
                             style={style}
                             ref={c => (this.textarea = c)}
                             rows={1}

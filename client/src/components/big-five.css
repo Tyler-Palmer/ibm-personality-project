@@ -1,4 +1,8 @@
 .big-five h5{
-    margin-top: 15px;
+    margin-top: 5px;
     font-weight: bolder;
+}
+
+hr{
+    margin-bottom: 5px !important;
 }
