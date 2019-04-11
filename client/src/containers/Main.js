@@ -95,7 +95,7 @@ class Main extends Component {
                             "detect_on": "window",
                             "events": {
                                 "onhover": {
-                                    "enable": true,
+                                    "enable": false,
                                     "mode": "bubble",
                                     "duration": 5,
                                 },

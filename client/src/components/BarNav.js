@@ -25,7 +25,7 @@ class BarNav extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="wrapper">
                 <Navbar color="light" light expand="md">
                     <NavbarBrand id ="nav-title" href="/">Watson Personality Analyzer</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />

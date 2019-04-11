@@ -23,7 +23,7 @@ class TextForm extends Component {
             boxSizing: "border-box",
             fontSize: "inherit",
             marginLeft: "10px",
-            overflowY: "scroll"
+            overflowY: "auto !important"
         }
 
         return (

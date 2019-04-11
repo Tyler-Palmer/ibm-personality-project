@@ -10,6 +10,13 @@
     text-decoration: none !important;
 }
 
+.wrapper{
+    position: sticky;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
 @media (max-width: 836px){
     #nav-title{
         font-size: 2em;

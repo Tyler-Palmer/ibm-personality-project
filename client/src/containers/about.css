@@ -40,6 +40,7 @@ canvas {
     box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.8);
     width: 100%;
     grid-column: 2;
+    margin-top: 15px;
 }
 
 #info1 p{
@@ -57,18 +58,15 @@ canvas {
     width: 100%;
     box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.8);
     margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    font-size: 1.25em;
+
 }
 
 #info2 h3{
     text-align: center;
     font-weight: bold;
-}
-
-#info2 {
-    padding: 20px;
-    font-size: 1.25em;
-    width: 100%;
-    grid-column: 2
 }
 
  li span{
@@ -86,6 +84,10 @@ canvas {
     height: 200px;
     width: 200px;
     background-size: contain;
+}
+
+.sub{
+    font-weight: bold;
 }
 
 @media (max-width: 515px){

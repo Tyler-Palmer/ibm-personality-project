@@ -17,10 +17,10 @@ class About extends Component {
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiple recent studies disclosed similar results for characteristics that were computed from social media data. One recent study with retail store data found that people who score high in orderliness, self-discipline, and cautiousness and low in immoderation are 40 percent more likely than the random population to respond to coupons. A second study found that people with specific values showed specific reading interests (Hsieh and others 2014). For example, people with a higher self-transcendence value demonstrated an interest in reading articles about the environment, and people with a higher self-enhancement value showed an interest in reading articles about work. A third study of more than 600 Twitter users found that a person's personality characteristics can predict their brand preference with 65 percent accuracy.<br></br><br></br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The following sections expand upon these high-level findings to describe the research and development behind the Personality Insights service. For more information about studies that apply the service to tangible scenarios, see The service in action.</p></div><br></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="sub">The following sections expand upon these high-level findings to describe the research and development behind the Personality Insights service. For more information about studies that apply the service to tangible scenarios, see the service in action.</span></p></div><br></br>
                     <div id="info2">
                         <h3>Understanding the personality models</h3>
-                        <p>For the Personality Insights service, IBM developed models to infer scores for Big Five dimensions and facets, Needs, and Values from textual information. The models reported by the service are based on research in the fields of psychology, psycholinguistics, and marketing:</p>
+                        <p className="sub">For the Personality Insights service, IBM developed models to infer scores for Big Five dimensions and facets, Needs, and Values from textual information. The models reported by the service are based on research in the fields of psychology, psycholinguistics, and marketing:</p>
                         <ul>
                             <li><span className="text-bold">Big Five</span> is one of the most studied of the personality models that were developed by psychologists (Costa and McCrae, 1992, and Norman, 1963). It is the most widely used personality model to describe how a person generally engages with the world. The service computes the five dimensions and thirty facets of the model. The dimensions are often referred to by the mnemonic OCEAN, where O stands for Openness, C for Conscientiousness, E for Extraversion, A for Agreeableness, and N for Neuroticism. (Because the term Neuroticism can have a specific clinical meaning, the service presents such insights under the more generally applicable heading Emotional range.)</li>
                             <li>
@@ -96,7 +96,7 @@ class About extends Component {
                         },
                         "move": {
                             "enable": true,
-                            "speed": 1,
+                            "speed": 3,
                             "direction": "top",
                             "random": true,
                             "straight": false,

@@ -1,13 +1,28 @@
 import React, { Component } from 'react'
 import Particles from 'react-particles-js'
+import { Link } from "react-router-dom";
 import watsonSvg from '../images/IBM_logo_animated.svg'
 import './home.css'
 
 class Home extends Component {
+    constructor(){
+        super()
+        this.state ={
+            show: false
+        }
+    }
+
+    componentDidMount() {
+        setTimeout(() => { this.setState({ show: !this.state.show }) }, 1000);
+      }
+
     render() {
         return (
             <div id="home">
                 <div id="watson-logo" style ={{backgroundImage: `url(${watsonSvg})`}}></div>
+                {this.state.show &&
+                <div id="enter-button"><Link to="/main">Enter</Link></div>
+                }
                 <div id="particle-js" className="gradient">
                     <Particles params={{
                         "particles": {
@@ -82,11 +97,11 @@ class Home extends Component {
                             "detect_on": "window",
                             "events": {
                                 "onhover": {
-                                    "enable": true,
+                                    "enable": false,
                                     "mode": "bubble"
                                 },
                                 "onclick": {
-                                    "enable": true,
+                                    "enable": false,
                                     "mode": "repulse"
                                 },
                                 "resize": true
