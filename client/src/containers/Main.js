@@ -6,12 +6,12 @@ import Particles from 'react-particles-js'
 import { withResults } from '../context/ResultsProvider'
 import LoadingSpinner from '../components/LoadingSpinner'
 import './main.css'
+import '../style.css'
 
 class Main extends Component {
 
     render() {
         return (
-            <div id="main-body">
                 <div id="main">
                     <Top />
                     <div id="input-box">
@@ -22,7 +22,7 @@ class Main extends Component {
                             <Results />
                         }
                     </div>
-                    <Particles params={{
+                    <Particles  params={{
                         "particles": {
                             "number": {
                                 "value": 80,
@@ -45,8 +45,8 @@ class Main extends Component {
                                 },
                                 "image": {
                                     "src": "img/github.svg",
-                                    "width": 100,
-                                    "height": 100
+                                    "width": '100vw',
+                                    "height": '100vh'
                                 }
                             },
                             "opacity": {
@@ -95,7 +95,7 @@ class Main extends Component {
                             "detect_on": "window",
                             "events": {
                                 "onhover": {
-                                    "enable": true,
+                                    "enable": false,
                                     "mode": "bubble",
                                     "duration": 5,
                                 },
@@ -136,7 +136,6 @@ class Main extends Component {
                     }}
                     />
                 </div>
-            </div>
         )
     }
 }

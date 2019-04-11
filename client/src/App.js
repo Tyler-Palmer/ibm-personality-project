@@ -15,8 +15,8 @@ class App extends Component {
                 <BarNav />
                 <Switch>
                     <Route exact path="/" component={ Home } />
-                    <Route path="/main" render= {props => <Main {...props}/>} />
-                    <Route path="/about" component={ About } />
+                    <Route exact path="/main" render= {props => <Main {...props}/>} />
+                    <Route exact path="/about" component={ About } />
                 </Switch>
                 <Footer />
             </div>

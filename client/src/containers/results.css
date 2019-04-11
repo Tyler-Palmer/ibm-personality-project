@@ -1,6 +1,7 @@
 #results-box{
-    height: auto;
+    height: 100% !important;
     width: auto;
     margin: 10px;
+    margin-bottom: 40px;
 }
 
