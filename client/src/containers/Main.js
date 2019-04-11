@@ -6,6 +6,7 @@ import Particles from 'react-particles-js'
 import { withResults } from '../context/ResultsProvider'
 import LoadingSpinner from '../components/LoadingSpinner'
 import './main.css'
+import '../style.css'
 
 class Main extends Component {
 
