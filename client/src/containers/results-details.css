@@ -31,7 +31,7 @@
     padding-left: 10px;
     border-radius: 3px;
     height: 100%;
-    width: 100% !important;
+    width: 100%;
 }
 
 #needs-box{
@@ -44,7 +44,7 @@
     padding-left: 10px;
     border-radius: 3px;
     height: 100%;
-    width: 100% !important;
+    width: 100%;
 }
 
 #values-box{
@@ -57,11 +57,11 @@
     padding-left: 10px;
     border-radius: 3px;
     height: 100%;
-    width: 100% !important;
+    width: 100%;
 }
 
 h3{
-    color:rgb(233,88,73) !important
+    color:rgb(233,88,73) !important;
 }
 
 @media (max-width: 600px){
