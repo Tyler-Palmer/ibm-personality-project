@@ -27,20 +27,6 @@ class TextForm extends Component {
 
         return (
             <div id="input-options">
-                <div id="speeches">
-                    <h3>Preloaded Speeches</h3>
-                    <form id="pre-loaded" onClick={this.props.handlePreload}>
-                        <button className=" btn btn-secondary text"
-                            name="Socrates"
-                        >Socrates - "Apology"
-                        </button>
-                        <button className=" btn btn-secondary text"
-                            name="MLK"
-                        >Martin Luther King Jr. - "I Have a Dream"</button>
-                        <button className=" btn btn-secondary text"
-                            name="Churchill">Winston Churchill - "Finest Hour"</button>
-                    </form>
-                </div>
                 <div id="textDiv">
                     <form id="textInput" onSubmit={this.props.handleSubmit}>
                         <textarea
@@ -57,6 +43,21 @@ class TextForm extends Component {
                         <button id="analyzebutton" className="btn btn-primary">Analyze</button>
                     </form>
                 </div>
+                <div id="speeches">
+                    <h3>Preloaded Speeches</h3>
+                    <form id="pre-loaded" onClick={this.props.handlePreload}>
+                        <button className=" btn btn-secondary text"
+                            name="Socrates"
+                        >Socrates - "Apology"
+                        </button>
+                        <button className=" btn btn-secondary text"
+                            name="MLK"
+                        >Martin Luther King Jr. - "I Have a Dream"</button>
+                        <button className=" btn btn-secondary text"
+                            name="Churchill">Winston Churchill - "Finest Hour"</button>
+                    </form>
+                </div>
+                
             </div>
         )
     }

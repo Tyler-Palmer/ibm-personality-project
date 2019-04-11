@@ -27,10 +27,9 @@ canvas {
     position: absolute;
     z-index: 5;
     min-height: 1000px;
-}
-
-#main-body{
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #input-box{

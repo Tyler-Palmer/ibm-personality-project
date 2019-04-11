@@ -12,7 +12,6 @@ class Main extends Component {
 
     render() {
         return (
-            <div id="main-body">
                 <div id="main">
                     <Top />
                     <div id="input-box">
@@ -137,7 +136,6 @@ class Main extends Component {
                     }}
                     />
                 </div>
-            </div>
         )
     }
 }
