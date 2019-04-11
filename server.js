@@ -1,16 +1,20 @@
 const express = require('express')
 const app = express()
-require('dotenv').config()
 const morgan = require('morgan')
-// const bodyParser = require('body-parser')
 const PersonalityInsightsV3 = require('watson-developer-cloud/personality-insights/v3')
 const personalityRouter = express.Router()
 
+//Other Imports
+require('dotenv').config()
+const path = require("path")
+const PORT = process.env.PORT || 8000
 
+//MiddleWare
 app.use(morgan('dev'))
-
 app.use(express.json())
 app.use('/results', personalityRouter)
+app.use(express.static(path.join(__dirname, "client", "build")))
+
 
 personalityRouter.post('/', (req, res) => {
     const personalityInsights = new PersonalityInsightsV3({
@@ -38,8 +42,11 @@ personalityRouter.post('/', (req, res) => {
     })
 })
 
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
-app.listen(6000, () => {
+app.listen(PORT, () => {
     console.log("server is running on port 6000")
 })
 
